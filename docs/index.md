@@ -1,12 +1,19 @@
-## Welcome to GitHub Pages
+## Problemas comunes en un servidor de aplicaciones
 
-You can use the [editor on GitHub](https://github.com/Max-Marshall/guide/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+En esta guía aprenderemos algunos problemas que se suelen presentar en nuestros servidores de aplicaciones y como detectarlos de la mejor forma.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Image](https://promwebsoft.com/files/images/varias/desarrollo-aplicaciones-web.png)
 
-### Markdown
+### ¿Cómo sabemos si tenemos conexión a internet? 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Esto es algo muy común que se suele presentar cuando instalamos un servidor, para detectarlo la mejor forma es usar algunos de estos comandos (Linux/Windows).
+
+
+`ping 8.8.8.8` _un simple ping a Google nos permite saber si estamos conectados_
+
+`ifconfig` _para ver la configuración de red en linux_
+
+`ipconfig` _para ver la configuración de red en windows_
 
 ```markdown
 Syntax highlighted code block
@@ -23,7 +30,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
