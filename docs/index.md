@@ -31,7 +31,20 @@ Al igual que debemos comprobar que podemos acceder a internet, también tenemos 
 `netstat /a` _también podemos utilizar netstat para ver todas las conexiones activas hacia y en nuestro servidor_
 
 
+### Cómo sabemos a quién pertenece una dirección web (URL)?
 
-### Support or Contact
+`dig google.es` _en linux podemos usar dig para ver a quien pertenece_
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+`nslookup google.es` _en windows podemos hacerlo con nslookup_
+
+### ¿Cómo probamos que podemos acceder a un servidor?
+
+En la mayoría de casos haciendo un `ping` podemos comprobarlo, pero si queremos acceder a un recurso específico podemos utilizar lo siguiente:
+
+`curl dominio.com/recurso` _tanto en linux como windows podemos usar curl, el cuál tiene muchas opciones disponibles_
+
+`wget dominio.com/recurso` _este también es similar al curl, pero en windows deberemos instalarlo por separado_
+
+### ¿Qué otros comandos te han hecho falta?
+
+En la sección de comprobación de firewalls tuve que utilizar algunos especificos como `netsh`.
